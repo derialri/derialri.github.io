@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Jalan-Jalan</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .invitation-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .date {
+            color: #ff6600;
+            font-weight: bold;
+        }
+
+        .location {
+            margin-top: 20px;
+        }
+
+        .btn-rsvp {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-rsvp:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-card">
+        <h1>Undangan Buat Kalian</h1>
+        <p>Halo teman-teman!</p>
+        <p>Mengundang kalian untuk bergabung dalam perjalanan seru kami.</p>
+        <p class="date">Kita bisa atur waktu nya bareng-bareng guys biar ga bentrokan </p>
+        <p class="location">Tempat: <strong>Rencana bogor. tapi kalo kalian punya reques gpp, yang penting kita rame-rame hehe</strong></p>
+        <p>Jangan lewatkan keseruan ini! Kami berharap kalian semua dapat berpartisipasi, bertemu dan berbagi momen indah bersama.</p>
+        <a href="#" class="btn-rsvp">Ayo Konfirmasi bisanya kapan dan maunya dimana?</a>
+    <div class="comment-box" id="commentBox" style="display:none;">
+            <textarea id="comment" placeholder="Tambahkan komentar..."></textarea>
+            <a href="#" class="btn-submit" onclick="submitComment()">Kirim Komentar</a>
+        </div>
+    </div>
+
+    <script>
+        function showCommentBox() {
+            document.getElementById('commentBox').style.display = 'block';
+        }
+
+        function submitComment() {
+            var comment = document.getElementById('comment').value;
+            alert('Komentar berhasil dikirim: ' + comment);
+        }
+    </script>
+
+</body>
+</html>
